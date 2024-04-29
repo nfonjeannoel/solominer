@@ -1,0 +1,8 @@
+venv
+.idea
+miner.log
+blochain_data.json
+data.json
+gpt.py
+bard.py
+tester.py
