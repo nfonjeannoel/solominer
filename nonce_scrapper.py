@@ -10,7 +10,7 @@ class NonceScrapper(Spider):
     start_urls = ['https://www.blockchain.com/explorer/blocks/btc?page={}']
 
     def start_requests(self):
-        for page in range(1, 1000 + 1):
+        for page in range(1, 10000 + 1):
             yield Request(self.start_urls[0].format(page))
 
     def parse(self, response):
